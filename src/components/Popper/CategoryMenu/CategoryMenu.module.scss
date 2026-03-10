@@ -1,0 +1,39 @@
+.menu-list {
+  max-width: 576px;
+  border-radius: 0.4rem;
+  background-color: rgba(15, 17, 26, 0.95) !important;
+  color: var(--white);
+}
+
+.menu-popper {
+  padding-bottom: 8px;
+}
+
+.menu-body {
+  display: grid;
+  padding: 8px;
+  max-height: 576px;
+  overflow-y: overlay;
+  column-gap: 8px;
+}
+
+.column4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.menu-item {
+  display: block;
+  width: 140px;
+  line-height: 32px;
+  padding: 0.2rem 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  font-size: 13px;
+  &:hover {
+    background-color: #ffffff05;
+    border-radius: 8px;
+    color: var(--primary);
+  }
+}
